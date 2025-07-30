@@ -1,0 +1,23 @@
+# Python virtual environments
+venv/
+
+# Environment configuration files
+conf/environments/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django static and media files
+static/
+media/
+
+# SQLite database
+*.sqlite3
+
+# VS Code settings
+.vscode/
+
+# Important data
+important_data/

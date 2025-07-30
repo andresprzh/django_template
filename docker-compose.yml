@@ -1,0 +1,33 @@
+services:
+
+    web:
+      image: django-template
+      container_name: django-template
+      build: .
+      env_file: conf/environments/.env
+      command: sh -c "python manage.py migrate && python manage.py runserver 0.0.0.0:9000"
+      # stdin_open: true
+      volumes:
+      - .:/django_template
+      ports:
+      - "9000:9000"
+      - "4000:4000"
+      expose:
+      - "9000"
+      sysctls:
+      - net.ipv4.tcp_retries2=3
+
+    rabbitmq:
+      image: rabbitmq:3.8.3
+      env_file: conf/environments/.env
+      restart: always
+      container_name: django-template-rabbit
+      command: rabbitmq-server
+      hostname: my-rabbit
+      volumes:
+        - ./important_data/rabbitmq:/var/lib/rabbitmq/mnesia
+      ports:
+        - "5672:5672"
+      expose:
+        - "5672"
+
