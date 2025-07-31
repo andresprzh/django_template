@@ -7,4 +7,6 @@ djangorestframework-api-key
 djangorestframework_simplejwt
 drf-yasg
 pytest
+pytest-cov
+pytest-django
 whitenoise

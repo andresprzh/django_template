@@ -17,7 +17,15 @@ media/
 *.sqlite3
 
 # VS Code settings
-.vscode/
+# .vscode/
 
 # Important data
 important_data/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+.coverage
+.coverage.*
+test-results/*

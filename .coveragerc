@@ -1,0 +1,4 @@
+[run]
+omit =
+    */tasks.py
+    */signals*.py
