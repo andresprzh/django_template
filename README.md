@@ -47,6 +47,29 @@ This is a Django project template designed for rapid development and easy integr
 
    - If `USE_SQLITE` is set to `True`, the project will use a local SQLite database. If set to `False`, it will use a PostgreSQL database and require the above environment variables to be set.
 
+    Example `.env` for SQLite:"
+
+   ```
+   USE_SQLITE=True
+   SECRET_KEY=your_secret_key_here
+   DEBUG=True
+   ```
+
+   Example `.env` for PostgreSQL:
+
+   ```
+   USE_SQLITE=False
+   SECRET_KEY=your_secret_key_here
+   DEBUG=True
+   POSTGRES_DB=your_db_name
+   POSTGRES_USER=your_db_user
+   POSTGRES_PASSWORD=your_db_password
+   DB_HOST=db
+   DB_PORT=5432
+   ```
+
+
+
 3. **Build and start the services:**
    ```bash
    docker compose up --build
