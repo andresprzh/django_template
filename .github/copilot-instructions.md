@@ -8,7 +8,7 @@ applyTo: every python file in the project, this includes the files in the apps, 
 
 When adding new Python code to the project, please follow these guidelines to ensure consistency and maintainability:
 
-- **Follow the existing project structure**: Place new code in the appropriate directories (e.g., `apps/` for Django apps, `django_template/` for project-level code).
+- **Follow the existing project structure**: Place new code in the appropriate directories (e.g., `apps/` for Django apps, `django_template/` for project-level code, or any name that the current project uses for the main directory).
 - **Adhere to coding standards**: Follow PEP 8 style guidelines for Python code. Use meaningful variable and function names, and include docstrings for all functions and classes.
 - **User Docker for development**: Whenever possible, use the Docker environment to run commands and tests. This ensures that your code is tested in an environment consistent with production.
 - **Update `INSTALLED_APPS`**: If you create a new Django app, make sure to add it to the `LOCAL_APPS` list in `base.py` and ensure that the `name` variable in the app's `apps.py` is set correctly (e.g., `apps.<app_name>`).

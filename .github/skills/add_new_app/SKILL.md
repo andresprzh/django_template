@@ -1,5 +1,5 @@
 ---
-name: Add new app
+name: add-new-app
 description: Create a new Django app within the project, this app will be loaded in the folder apps.
 file: .github/skills/add_new_app/SKILL.md
 ---
@@ -25,4 +25,4 @@ This is a minimal skill to create new apps in this project. It will create a new
   python manage.py startapp <app_name> apps/<app_name>
   ```
 - After creating the app, modify the `apps.py` file in the new app folder, and change the `name` variable to `apps.<app_name>`, this is required to ensure that the app is loaded correctly in the project.
-- After creating the app and modify the `apps.py`, add the app to the `LOCAL_APPS` in the `base.py` file. The settings file is located in `django_template/custom_settings/`, this `LOCAL_APPS` variable is used to keep track of the apps that are created in the project, and it is added to the `INSTALLED_APPS` variable.
+- After creating the app and modify the `apps.py`, add the app to the `LOCAL_APPS` in the `base.py` file. The settings file is located in  custom_settint folder `<project_name>/custom_settings/`, this `LOCAL_APPS` variable is used to keep track of the apps that are created in the project, and it is added to the `INSTALLED_APPS` variable.
