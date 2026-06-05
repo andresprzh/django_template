@@ -68,6 +68,11 @@ This is a Django project template designed for rapid development and easy integr
    DB_PORT=5432
    ```
 
+   **Note**: You can use this command in the web service to create the secret key for local development if you don't have one:
+
+   ```bash
+   docker compose run --rm web python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
+   ```
 
 
 3. **Build and start the services:**
