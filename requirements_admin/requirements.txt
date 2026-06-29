@@ -6,6 +6,7 @@ djangorestframework
 djangorestframework-api-key
 djangorestframework_simplejwt
 drf-yasg
+psycopg
 pytest
 pytest-cov
 pytest-django
